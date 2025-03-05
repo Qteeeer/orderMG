@@ -1,3 +1,4 @@
+import { useData } from "@api";
 import { Box } from "../box";
 import { Caption } from "../caption";
 import { Text } from "../text";
@@ -5,6 +6,10 @@ import bonus from "./bonus.png";
 import girl2 from "./girl2.jpg";
 
 const Default = () => {
+  const [data, loading] = useData("userInfo");
+
+  console.log(data, loading);
+
   return (
     <Box
       defGrid

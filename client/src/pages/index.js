@@ -1,4 +1,4 @@
-import { Box } from "@components";
+import { Box, Top } from "@components";
 import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { useEffect, useState } from "react";
@@ -78,7 +78,10 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Default />
+      <Box flex gap sx={{ px: 2, pt: 1, overflowX: "hidden" }}>
+        <Top />
+        <Default />
+      </Box>
       <Box sx={{ minHeight: 20 }} />
     </ThemeProvider>
   );

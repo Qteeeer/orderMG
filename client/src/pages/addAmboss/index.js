@@ -1,4 +1,4 @@
-import { AddAmbassador, Box, Reviews, Top } from "@components";
+import { AddAmbassador, Reviews } from "@components";
 import { ImageSlider } from "src/components/ImageSlider";
 import review from "./review.png";
 import review1 from "./review1.png";
@@ -15,12 +15,11 @@ const images = [
 ];
 
 const Default = () => (
-  <Box flex gap={2} sx={{ px: 2, pt: 1, overflowX: "hidden" }}>
-    <Top />
+  <>
     <AddAmbassador />
     <Reviews />
     <ImageSlider images={images} />
-  </Box>
+  </>
 );
 
 const def = { Component: Default, name };
