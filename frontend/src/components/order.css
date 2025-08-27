@@ -1,0 +1,112 @@
+.app {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  background-color: #f9f9f9;
+}
+
+.order-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.order-id {
+  color: #007bff;
+}
+
+.order-date {
+  color: #666;
+}
+
+.order-client {
+  margin-top: 10px;
+  color: #333;
+}
+
+.order-products ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.order-products li {
+  margin-bottom: 8px;
+}
+
+.order-products em {
+  color: #555;
+}
+
+.order-details {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.paid {
+  color: green;
+  font-weight: bold;
+}
+
+.unpaid {
+  color: red;
+  font-weight: bold;
+}
+
+.order-actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.order-actions button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.order-actions button:hover:not([disabled]) {
+  opacity: 0.9;
+}
+
+.order-actions button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.order-actions button:nth-child(1) {
+  background-color: #ffc107;
+  color: black;
+} /* Готовится */
+.order-actions button:nth-child(2) {
+  background-color: #28a745;
+  color: white;
+} /* Готов */
+.order-actions button:nth-child(3) {
+  background-color: #17a2b8;
+  color: white;
+} /* Передан */
+.order-actions button:nth-child(4) {
+  background-color: #28a745;
+  color: white;
+} /* Выполнен */
+.order-actions button:nth-child(5) {
+  background-color: #dc3545;
+  color: white;
+} /* Отменить */

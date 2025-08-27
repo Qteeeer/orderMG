@@ -1,0 +1,105 @@
+/* src/components/order.css */
+.order-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.order-id {
+  color: #007bff;
+}
+
+.order-date {
+  color: #666;
+}
+
+.order-client {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.order-products ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 5px 0;
+}
+
+.order-products li {
+  margin-bottom: 6px;
+}
+
+.order-products em {
+  color: #555;
+  font-size: 13px;
+}
+
+.order-details {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.paid {
+  color: green;
+  font-weight: bold;
+}
+
+.unpaid {
+  color: red;
+  font-weight: bold;
+}
+
+.order-actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.order-actions button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.order-actions button:hover:not([disabled]) {
+  opacity: 0.9;
+}
+
+.order-actions button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.order-actions button:nth-child(1) {
+  background-color: #ffc107;
+  color: black;
+}
+.order-actions button:nth-child(2) {
+  background-color: #28a745;
+  color: white;
+}
+.order-actions button:nth-child(3) {
+  background-color: #17a2b8;
+  color: white;
+}
+.order-actions button:nth-child(4) {
+  background-color: #28a745;
+  color: white;
+}
+.order-actions button:nth-child(5) {
+  background-color: #dc3545;
+  color: white;
+}
