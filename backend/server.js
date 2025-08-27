@@ -6,7 +6,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Получить список новых заказов
 app.get("/api/orders", async (req, res) => {
   try {
     const [rows] = await pool.query(`
@@ -20,7 +19,6 @@ app.get("/api/orders", async (req, res) => {
               AND STR_TO_DATE(z.datetime, '%d-%m-%Y %H:%i:%s') >= '2025-06-19'
         `);
 
-    // Получаем клиентов и товары для каждого заказа
     const orders = [];
 
     for (const order of rows) {
@@ -52,7 +50,6 @@ app.get("/api/orders", async (req, res) => {
   }
 });
 
-// Обновление статуса
 app.post("/api/update-status", async (req, res) => {
   const { uniqid, metka } = req.body;
 
